@@ -16,7 +16,6 @@ import MobileMenu from '../../components/MobileMenu'
 import Saveday from '../../components/countdown'
 
 // TODO: These
-// <BackgroundVideo/>
 // <Saveday/>
 // <Couple/>
 // <Welcome/>

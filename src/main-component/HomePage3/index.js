@@ -20,17 +20,29 @@ const Homepage3 = () => {
     return(
        <div>
            <Header/>
+           // Do next
            <MobileMenu/>
+           // Do next
            <BackgroundVideo/>
+           // Do next
            <Saveday/>
+           // Do next
            <Couple/>
+           // Do next
            <Welcome/>
+           // Do next
            <Story/>
+           // Do next
            <People/>
+           // Do next
            <Location/>
+           // Do next
            <Gallery/>
+           // Do next
            <Rsvp/>
+           // Do next
            <Getting/>
+           // Do next
            <Gift/>
        </div>
     )

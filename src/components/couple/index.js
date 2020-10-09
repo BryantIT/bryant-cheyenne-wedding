@@ -7,7 +7,7 @@ import './style.css'
 const Couple = () => {
   return (<div id="couple" className="about-wrap">
     <div className="couple-area section-padding">
-      <Sectiontitle section={'Happy Cuple'}/>
+      <Sectiontitle section={'Happy Couple'}/>
       <div className="container">
         <div className="couple-wrap">
           <div className="row">
@@ -18,8 +18,8 @@ const Couple = () => {
                 </div>
                 <div className="couple-text">
                   <div className="couple-content">
-                    <h3>Aliza Elizabeth</h3>
-                    <p>Hi I am Nancy Elizabeth. I am going to introduce myself.I am a professional graphic designer professional graphic designer going to introduce myself.I am going to introduce myself.</p>
+                    <h3>Cheyenne Bowman</h3>
+                  <p>Hi!  I'm Cheyenne. I work, I'm a mother and I spend a good deal of time playing dress up!</p>
                   </div>
                 </div>
               </div>
@@ -31,8 +31,8 @@ const Couple = () => {
                 </div>
                 <div className="couple-text">
                   <div className="couple-content">
-                    <h3>David Wiliam</h3>
-                    <p>Hi I am Nancy Elizabeth. I am going to introduce myself.I am a professional graphic designer professional graphic designer going to introduce myself.I am going to introduce myself.</p>
+                    <h3>Bryant Richards</h3>
+                  <p>Hello!  I'm Bryant and I am a full time Software Engineer, father and part time ninja.</p>
                   </div>
                 </div>
               </div>

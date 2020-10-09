@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+// If these are removed it messes up animated circle.  Unknown reason
 import Homepage from '../HomePage/index'
 import Homepage2 from '../HomePage2/index'
 import Homepage3 from '../HomePage3/index'
@@ -10,23 +11,20 @@ import Scrollbar from '../../components/scrollbar'
 import './App.css';
 
 
-const App = () => { 
+const App = () => {
 
   return (
     <div className="App">
        <Router>
           <Switch>
-            <Route exact path='/' component={Homepage} />
-            <Route path='/home' component={Homepage} />
-            <Route path='/home2' component={Homepage2} />
-            <Route path='/home3' component={Homepage3} />
+            <Route exact path='/' component={Homepage3} />
             <Route path='/Blog' component={BlogPage} />
             <Route path='/Blog-details' component={BlogDetailsPage} />
           </Switch>
           <Footer/>
           <Scrollbar/>
       </Router>
-      
+
     </div>
   );
 }

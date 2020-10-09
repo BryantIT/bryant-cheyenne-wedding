@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './style.css'
 
-const Welcome = () => {
+const Rsvp = () => {
   return (<div className="welcome-area">
     <div className="container">
       <div className="row">
@@ -23,4 +23,4 @@ const Welcome = () => {
   </div>)
 }
 
-export default Welcome;
+export default Rsvp;

@@ -1,10 +1,10 @@
-  
+
 import React from 'react';
 import {Animated} from "react-animated-css";
 import classes from '../../css/BackgroundVideo.module.css';
 
 const BackgroundVideo = () => {
-    const videoSource = "https://static.videezy.com/system/resources/previews/000/038/390/original/17_050_01.mp4"
+    const videoSource = "https://res.cloudinary.com/dm1w2j7mu/video/upload/v1602278344/Harry_Potter_Intro_v2_hqkyf8.mp4"
     return (
       <div className="vedio-area" id="home">
           <div className={classes.Container} >
@@ -17,7 +17,7 @@ const BackgroundVideo = () => {
                 <div className="slide-b">
                     <div className="slide-content">
                           <div className="slide-subtitle">
-                              <h4>WERE GETTING MARRIED</h4>
+                              <h4>WE'RE GETTING MARRIED</h4>
                           </div>
                           <div className="slide-title">
                               <h2>Save Our Date</h2>

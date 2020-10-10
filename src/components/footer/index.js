@@ -7,11 +7,11 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="text">
-                        <h2>David & Aliza</h2>
+                        <h2>Bryant & Cheyenne</h2>
                         <p>Thank you</p>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     )
 }

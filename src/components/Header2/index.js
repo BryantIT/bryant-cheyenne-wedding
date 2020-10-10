@@ -15,7 +15,7 @@ const Header2 = () => {
                     <div className="row">
                         <div className="col-lg-3">
                             <div className="logo">
-                                <h2><Link to='/home'>David & Aliza</Link></h2>
+                                <h2><Link to='/home'>Bryant & Cheyenne</Link></h2>
                             </div>
                         </div>
                         <div className="col-lg-9">

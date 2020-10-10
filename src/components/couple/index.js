@@ -5,7 +5,8 @@ import couple2 from '../../images/couple/img-2.jpg'
 import './style.css'
 
 const Couple = () => {
-  return (<div id="couple" className="about-wrap">
+  return (
+    <div id="couple" className="about-wrap">
     <div className="couple-area section-padding">
       <Sectiontitle section={'Happy Couple'}/>
       <div className="container">
@@ -42,7 +43,8 @@ const Couple = () => {
       </div>
     </div>
 
-  </div>)
+  </div>
+)
 }
 
 export default Couple;

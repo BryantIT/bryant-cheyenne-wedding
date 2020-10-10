@@ -1,10 +1,19 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Sectiontitle from '../section-title'
-import firebase from '../firestore'
+import Confirmation from '../Confirmation'
+import firebase from '../../firebase'
 import './style.css'
 
 export default function Rsvp () {
   const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    rsvp: '',
+    events: '',
+    notes: ''
+  })
+  const [submitted, setSubmitted] = useState(false)
+  const [confirmationData, setConfirmationData] = useState({
     name: '',
     email: '',
     rsvp: '',
@@ -17,14 +26,53 @@ export default function Rsvp () {
   }
   console.log('HANDLE CHANGE', formData)
 
-
-
   const handleSubmit = (e) => {
-    e.preventDefault();
-
+    e.preventDefault()
+    const name = formData.name
+    const email = formData.email
+    const rsvp = formData.rsvp
+    const events = formData.events
+    const notes = formData.notes
+    firebase
+    .firestore()
+    .collection('guests')
+    .add({
+      name,
+      email,
+      rsvp,
+      events,
+      notes
+    })
+    .then(() => {
+      setConfirmationData({
+        name: name,
+        email: email,
+        rsvp: rsvp,
+        events: events,
+        notes: notes
+      })
+    })
+    .then(() => {
+      setFormData({
+        name: '',
+        email: '',
+        rsvp: '',
+        events: '',
+        notes: ''
+      })
+    })
+    setSubmitted(true)
   }
 
     return (
+      submitted ?
+      <Confirmation
+        name={confirmationData.name}
+        email={confirmationData.email}
+        rsvp={confirmationData.rsvp}
+        events={confirmationData.events}
+        notes={confirmationData.notes}
+      /> :
       <div id="rsvp" className="rsvp-area go-rsvp-area section-padding">
       <Sectiontitle section={'Be Our Guest'}/>
       <div className="container">
@@ -51,16 +99,15 @@ export default function Rsvp () {
                   <div className="col col-sm-12">
                     <select className="form-control" onChange={handleChange} value={formData.events} name="events">
                       <option disabled="disabled" value="">I Am Attending*</option>
-                      <option value="1">Al events</option>
-                      <option value="2">Wedding ceremony</option>
-                      <option value="3">Reception party</option>
+                    <option value="In Spirit">In Spirit</option>
+                  <option value="In Person">In Person</option>
                     </select>
                   </div>
                   <div className="col-12 col-sm-12">
                     <textarea className="contact-textarea" value={formData.notes} onChange={handleChange} placeholder="Message" name="notes"></textarea>
                   </div>
                   <div className="col-12 text-center">
-                    <button id="submit" type="submit" className="submit">Send Invitation</button>
+                    <button id="submit" type="submit" className="submit">RSVP</button>
                   </div>
                 </div>
               </form>

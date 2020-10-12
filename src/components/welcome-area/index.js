@@ -13,9 +13,6 @@ const Welcome = () => {
             <div className="btn">
               <Link to="/rsvp">RSVP</Link>
             </div>
-            <div className="btn">
-              <Link to="/home">Location</Link>
-            </div>
           </div>
         </div>
       </div>

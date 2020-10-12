@@ -11,7 +11,7 @@ const Welcome = () => {
             <h2>Welcome to our very magical wedding</h2>
             <p>We are so happy you are considering joining us on our big day!</p>
             <div className="btn">
-              <Link to="/home">RSVP</Link>
+              <Link to="/rsvp">RSVP</Link>
             </div>
             <div className="btn">
               <Link to="/home">Location</Link>

@@ -1,11 +1,11 @@
 .site-footer {
-    background: url(../../images/slider/2.jpg);
+    background: rgba(178,201,211,.8);
     text-align: center;
     padding: 120px 0;
     position: relative;
     overflow: hidden;
   }
-  
+
   .site-footer .text{
     text-align: center;
     background: rgba(178,201,211,.8);
@@ -34,13 +34,13 @@
 
     }
   }
-  
+
   @media (max-width: 991px) {
     .site-footer {
 
     }
   }
-  
+
   .site-footer:before {
     content: "";
     background-color: rgba(0,0,0,.4);
@@ -50,7 +50,7 @@
     left: 0;
     top: 0;
   }
-  
+
   .site-footer h2 {
     font-size: 40px;
     color: #eae8e8;
@@ -60,7 +60,7 @@
     z-index: 2;
     font-family: 'Great Vibes', cursive;
   }
-  
+
   @media (max-width: 767px) {
     .site-footer h2 {
       font-size: 30px;
@@ -71,7 +71,7 @@
       height: 255px;
   }
   }
-  
+
   @media (max-width: 450px) {
     .site-footer h2 {
       font-size: 40px;
@@ -87,7 +87,7 @@
     position: relative;
     z-index: 2;
   }
-  
+
   @media (max-width: 767px) {
     .site-footer p {
       font-size: 20px;

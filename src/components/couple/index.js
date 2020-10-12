@@ -42,7 +42,6 @@ const Couple = () => {
         </div>
       </div>
     </div>
-
   </div>
 )
 }

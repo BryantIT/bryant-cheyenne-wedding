@@ -12,6 +12,20 @@ export default function Rsvp () {
     events: '',
     notes: ''
   })
+
+  // Generating Random Id for each guest
+  const [idGenerator, setIdGenerator] = useState('')
+  const generateId = () => {
+    const temp = Math.floor(Math.random() * 256)
+    const id = temp * 100
+    return id
+  }
+
+  useEffect(() => {
+    const num = generateId()
+    setIdGenerator(num)
+  }, [])
+
   const [submitted, setSubmitted] = useState(false)
   const [confirmationData, setConfirmationData] = useState({
     name: '',

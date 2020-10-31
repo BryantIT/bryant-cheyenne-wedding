@@ -121,7 +121,7 @@ export default function Rsvp () {
       /> :
       <div id="rsvp" className="rsvp-area go-rsvp-area section-padding">
       <Sectiontitle section={'Be Our Guest'}/>
-      <div className="container">
+      <div id='rsvp#' className="container">
         <div className="row">
           <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
             <div className="rsvp-wrap">

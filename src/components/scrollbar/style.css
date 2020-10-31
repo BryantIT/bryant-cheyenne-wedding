@@ -1,10 +1,10 @@
-ul.smothscroll {
+ul.smoothscroll {
     position: fixed;
     bottom: 0px;
     right:30px;
     list-style: none;
 }
-ul.smothscroll a {
+ul.smoothscroll a {
     width: 50px;
     height: 50px;
     background: #85aaba;

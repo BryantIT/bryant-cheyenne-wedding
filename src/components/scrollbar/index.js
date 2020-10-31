@@ -7,12 +7,12 @@ const Scrollbar = () => {
     return(
         <div className="col-lg-12">
             <div className="header-menu">
-                <ul className="smothscroll">
-                    <li><AnchorLink href='#home'><i className="fa fa-arrow-up"></i></AnchorLink></li>
+                <ul className="smoothscroll">
+                    <li><AnchorLink href='#'><i className="fa fa-arrow-up"></i></AnchorLink></li>
                 </ul>
             </div>
         </div>
-        
+
     )
 }
 

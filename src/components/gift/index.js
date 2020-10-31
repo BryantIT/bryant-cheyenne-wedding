@@ -78,8 +78,8 @@ class Gift extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Gift;
+export default Gift

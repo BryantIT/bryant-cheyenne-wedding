@@ -119,67 +119,67 @@ export default function Rsvp () {
         events={confirmationData.events}
         notes={confirmationData.notes}
       /> :
-      <div id="rsvp" className="rsvp-area go-rsvp-area section-padding">
-      <Sectiontitle section={'Be Our Guest'}/>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-            <div className="rsvp-wrap">
+      <div id='rsvp' className='rsvp-area go-rsvp-area section-padding'>
+      <Sectiontitle section={'Be Our Guest'} id='home' />
+      <div className='container'>
+        <div className='row'>
+          <div className='col-lg-8 offset-lg-2 col-md-10 offset-md-1'>
+            <div className='rsvp-wrap'>
               <form onSubmit={handleSubmit}>
-                <div className="contact-form form-style">
-                  <div className="col col-sm-12">
-                    <select className="form-control" required onChange={handleInviteChange} value={invited} name="rsvp">
-                      <option disabled="disabled" value="">Do you have an invite code?*</option>
-                    <option value="Yes">Yes</option>
-                  <option value="No">No</option>
+                <div className='contact-form form-style'>
+                  <div className='col col-sm-12'>
+                    <select className='form-control' required onChange={handleInviteChange} value={invited} name='rsvp'>
+                      <option disabled='disabled' value="">Do you have an invite code?*</option>
+                    <option value='Yes'>Yes</option>
+                  <option value='No'>No</option>
                     </select>
                   </div>
                   {
                     shouldRender ?
-                    <div className="col-12 col-sm-12">
-                      <input type="text" value={inviteCode} onChange={handleSecretChange} placeholder="Your Code*" id="fname" name="inviteCode"/>
+                    <div className='col-12 col-sm-12'>
+                      <input type='text' value={inviteCode} onChange={handleSecretChange} placeholder='Your Code*' id='fname' name='inviteCode'/>
                   </div> : null
                   }
-                  <div className="col-12 col-sm-12">
-                    <input type="text" value={formData.name} required onChange={handleChange} placeholder="Your Name*" id="fname" name="name"/>
+                  <div className='col-12 col-sm-12'>
+                    <input type='text' value={formData.name} required onChange={handleChange} placeholder='Your Name*' id='fname' name='name'/>
                   </div>
-                  <div className="col-12  col-sm-12">
-                    <input type="text" placeholder="Your Email*" onChange={handleChange} value={formData.email} required id="email" name="email"/>
+                  <div className='col-12  col-sm-12'>
+                    <input type='text' placeholder='Your Email*' onChange={handleChange} value={formData.email} required id='email' name='email'/>
                   </div>
-                  <div className="col-12  col-sm-12">
-                    <input type="text" placeholder="Your House" onChange={handleChange} value={formData.email} id="house" name="house"/>
+                  <div className='col-12  col-sm-12'>
+                    <input type='text' placeholder='Your House' onChange={handleChange} value={formData.email} id='house' name='house'/>
                   </div>
-                  <div className="col col-sm-12">
-                    <select className="form-control" onChange={handleChange} value={formData.rsvp} required name="rsvp">
-                      <option disabled="disabled" value="">Number Of rsvp*</option>
-                    <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
+                  <div className='col col-sm-12'>
+                    <select className='form-control' onChange={handleChange} value={formData.rsvp} required name='rsvp'>
+                      <option disabled='disabled' value="">Number Of rsvp*</option>
+                    <option value='0'>0</option>
+                      <option value='1'>1</option>
+                      <option value='2'>2</option>
+                      <option value='3'>3</option>
+                      <option value='4'>4</option>
                     </select>
                   </div>
                   {
                     secretsRender ?
-                    <div className="col col-sm-12">
-                      <select className="form-control" onChange={handleChange} value={formData.events} required name="events">
-                        <option disabled="disabled" value="">I Am Attending*</option>
-                      <option value="In Person">In Person</option>
-                      <option value="In Spirit">In Spirit</option>
+                    <div className='col col-sm-12'>
+                      <select className='form-control' onChange={handleChange} value={formData.events} required name='events'>
+                        <option disabled='disabled' value="">I Am Attending*</option>
+                      <option value='In Person'>In Person</option>
+                      <option value='In Spirit'>In Spirit</option>
                       </select>
                     </div> :
-                    <div className="col col-sm-12">
-                      <select className="form-control" onChange={handleChange} value={formData.events} required name="events">
-                        <option disabled="disabled" value="">I Am Attending*</option>
-                      <option value="In Spirit">In Spirit</option>
+                    <div className='col col-sm-12'>
+                      <select className='form-control' onChange={handleChange} value={formData.events} required name='events'>
+                        <option disabled='disabled' value="">I Am Attending*</option>
+                      <option value='In Spirit'>In Spirit</option>
                       </select>
                     </div>
                   }
-                  <div className="col-12 col-sm-12">
-                    <textarea className="contact-textarea" value={formData.notes} onChange={handleChange} placeholder="Message" name="notes"></textarea>
+                  <div className='col-12 col-sm-12'>
+                    <textarea className='contact-textarea' value={formData.notes} onChange={handleChange} placeholder='Message' name='notes'></textarea>
                   </div>
-                  <div className="col-12 text-center">
-                    <button id="submit" type="submit" className="submit">RSVP</button>
+                  <div className='col-12 text-center'>
+                    <button id='submit' type='submit' className='submit'>RSVP</button>
                   </div>
                 </div>
               </form>

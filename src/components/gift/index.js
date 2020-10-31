@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -6,6 +7,7 @@ import gift1 from '../../images/gift/img-1.jpg'
 import gift2 from '../../images/gift/img-2.jpg'
 import gift3 from '../../images/gift/img-3.jpg'
 import gift4 from '../../images/gift/img-4.jpg'
+import amazon from '../../images/gift/amazon.png'
 import './style.css'
 
 class Gift extends Component {
@@ -50,7 +52,9 @@ class Gift extends Component {
             <div className='col-lg-12'>
               <Slider {...settings}>
                 <div className='item'>
-                  <img src={gift1} alt="" />
+                  <Link>
+                    <img src={amazon} alt="" />
+                  </Link>
                 </div>
                 <div className='item'>
                   <img src={gift2} alt="" />

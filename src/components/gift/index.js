@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import gift1 from "../../images/gift/img-1.jpg";
-import gift2 from "../../images/gift/img-2.jpg";
-import gift3 from "../../images/gift/img-3.jpg";
-import gift4 from "../../images/gift/img-4.jpg";
-import "./style.css";
+import React, { Component } from 'react'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import gift1 from '../../images/gift/img-1.jpg'
+import gift2 from '../../images/gift/img-2.jpg'
+import gift3 from '../../images/gift/img-3.jpg'
+import gift4 from '../../images/gift/img-4.jpg'
+import './style.css'
 
 class Gift extends Component {
   render() {
-    var settings = {
+    const settings = {
       dots: false,
       arrows: false,
       speed: 500,
@@ -42,35 +42,35 @@ class Gift extends Component {
           },
         },
       ],
-    };
+    }
     return (
-      <div className="gift-area">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
+      <div className='gift-area'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-12'>
               <Slider {...settings}>
-                <div className="item">
+                <div className='item'>
                   <img src={gift1} alt="" />
                 </div>
-                <div className="item">
+                <div className='item'>
                   <img src={gift2} alt="" />
                 </div>
-                <div className="item">
+                <div className='item'>
                   <img src={gift3} alt="" />
                 </div>
-                <div className="item">
+                <div className='item'>
                   <img src={gift4} alt="" />
                 </div>
-                <div className="item">
+                <div className='item'>
                   <img src={gift1} alt="" />
                 </div>
-                <div className="item">
+                <div className='item'>
                   <img src={gift2} alt="" />
                 </div>
-                <div className="item">
+                <div className='item'>
                   <img src={gift3} alt="" />
                 </div>
-                <div className="item">
+                <div className='item'>
                   <img src={gift4} alt="" />
                 </div>
               </Slider>

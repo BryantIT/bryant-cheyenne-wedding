@@ -1,31 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Sectiontitle from "../section-title";
-import strory1 from "../../images/events/img-1.jpg";
-import strory2 from "../../images/events/img-2.jpg";
-import strory3 from "../../images/events/img-3.jpg";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Sectiontitle from '../section-title'
+import story1 from '../../images/events/img-1.jpg'
+import story2 from '../../images/events/img-2.jpg'
+import story3 from '../../images/events/img-3.jpg'
 
-import "./style.css";
+import './style.css'
 
 const Location = () => {
   return (
-    <div id="event" className="event-section section-padding">
-      <Sectiontitle section={"When & Where"} />
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="tabs-site-button">
-              <div className="event-tabs">
-                <div className="col-md-12 col-12">
-                  <div className="event-wrap">
-                    <div className="row">
-                      <div className="col-lg-5 col-md-12 col-12">
-                        <div className="event-img">
-                          <img src={strory1} alt="" />
+    <div id='event' className='event-section section-padding'>
+      <Sectiontitle section={'When & Where'} />
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12'>
+            <div className='tabs-site-button'>
+              <div className='event-tabs'>
+                <div className='col-md-12 col-12'>
+                  <div className='event-wrap'>
+                    <div className='row'>
+                      <div className='col-lg-5 col-md-12 col-12'>
+                        <div className='event-img'>
+                          <img src={story1} alt="" />
                         </div>
                       </div>
-                      <div className="col-lg-7 col-md-12 col-12">
-                        <div className="event-text">
+                      <div className='col-lg-7 col-md-12 col-12'>
+                        <div className='event-text'>
                           <h3>Wedding Ceremony</h3>
                           <span>Sunday, 25 July 18, 9.00 AM-5.00 PM</span>
                           <span>256 Apay Road,Califonia Bong, London</span>
@@ -70,7 +70,7 @@ const Location = () => {
                       </div>
                       <div className="col-lg-5 col-md-12 col-12">
                         <div className="event-img">
-                          <img src={strory2} alt="" />
+                          <img src={story2} alt="" />
                         </div>
                       </div>
                     </div>
@@ -79,7 +79,7 @@ const Location = () => {
                     <div className="row">
                       <div className="col-lg-5 col-md-12 col-12">
                         <div className="event-img">
-                          <img src={strory3} alt="" />
+                          <img src={story3} alt="" />
                         </div>
                       </div>
                       <div className="col-lg-7 col-md-12 col-12">

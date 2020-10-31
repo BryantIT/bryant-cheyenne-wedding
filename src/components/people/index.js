@@ -122,13 +122,13 @@ const People = () => {
                   </div>
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-6 grid'>
-                  <div className='groomsmen-bridesmaid-wrap mb-0'>
+                  <div className='groomsmen-bridesmaid-wrap groomsmen-bridesmaid-wrap-2'>
                     <div className='groomsmen-bridesmaid-img'>
                       <img src={bride8} alt='bride' />
                     </div>
                     <div className='groomsmen-bridesmaid-content'>
-                      <h4>Juliette Vincent</h4>
-                      <span>Officiant</span>
+                      <h4>Dakota Richards</h4>
+                      <span>Usher</span>
                     </div>
                   </div>
                 </div>

@@ -1,15 +1,15 @@
-import React from 'react';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from 'react'
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // If these are removed it messes up animated circle.  Unknown reason
-import Homepage from '../HomePage/index';
-import Homepage2 from '../HomePage2/index';
-import Homepage3 from '../HomePage3/index';
-import BlogPage from '../blogpage';
-import BlogDetailsPage from '../BlogDetailsPage';
-import Footer from '../../components/footer';
-import Scrollbar from '../../components/scrollbar';
-import Rsvp from '../../components/rsvp';
-import './App.css';
+import Homepage from '../HomePage/index'
+import Homepage2 from '../HomePage2/index'
+import Homepage3 from '../HomePage3/index'
+import BlogPage from '../blogpage'
+import BlogDetailsPage from '../BlogDetailsPage'
+import Footer from '../../components/footer'
+import Scrollbar from '../../components/scrollbar'
+import Rsvp from '../../components/rsvp'
+import './App.css'
 
 
 const App = () => {
@@ -28,7 +28,7 @@ const App = () => {
       </Router>
 
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

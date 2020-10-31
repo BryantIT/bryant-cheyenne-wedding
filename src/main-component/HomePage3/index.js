@@ -39,7 +39,6 @@ const Homepage3 = () => {
            <People/>
            <Location/>
            <Gallery/>
-           <Rsvp/>
            <Getting/>
            <Gift/>
        </div>

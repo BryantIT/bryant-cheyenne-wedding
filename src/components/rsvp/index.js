@@ -146,6 +146,9 @@ export default function Rsvp () {
                   <div className="col-12  col-sm-12">
                     <input type="text" placeholder="Your Email*" onChange={handleChange} value={formData.email} required id="email" name="email"/>
                   </div>
+                  <div className="col-12  col-sm-12">
+                    <input type="text" placeholder="Your House" onChange={handleChange} value={formData.email} id="house" name="house"/>
+                  </div>
                   <div className="col col-sm-12">
                     <select className="form-control" onChange={handleChange} value={formData.rsvp} required name="rsvp">
                       <option disabled="disabled" value="">Number Of rsvp*</option>

@@ -1,6 +1,7 @@
 import React from 'react'
 import gta1 from '../../images/gta/img-1.jpg'
 import gta2 from '../../images/gta/img-2.jpg'
+import parking from '../../images/gta/hpcar.jpg'
 import Sectiontitle from '../section-title'
 import './style.css'
 
@@ -21,6 +22,20 @@ const Getting = () => {
                 </div>
               </div>
               <div className='heading heading-2 col-md-12 col-sm-6'>
+                <h4>Parking</h4>
+                <div className='gta-content'>
+                  <p>
+                    There is ample room for parking for everyone.  If you need any special accommodations please do not hesitate to let us know.
+                  </p>
+                </div>
+                <div className='gta-img'>
+                  <img src={parking} alt='parked car' />
+                </div>
+              </div>
+              <div className='heading heading-2 col-md-12 col-sm-6'>
+                <br />
+                <br />
+                <br />
                 <h4>Accommodations</h4>
                 <div className='gta-content'>
                   <p>
@@ -32,6 +47,7 @@ const Getting = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

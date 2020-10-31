@@ -84,6 +84,6 @@ const Location = () => {
         </div>
       </div>
     </div>
-  );
-};
-export default Location;
+  )
+}
+export default Location

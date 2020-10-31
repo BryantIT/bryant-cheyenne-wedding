@@ -32,9 +32,6 @@ const Location = () => {
                           <p>
                             The Main event begins at 3.  The ceremony will be held under a gazebo at the venue with plenty of sitting and standing room for all. Don't forget to come early so you can  visit Diagon Alley while you are here!{" "}
                           </p>
-                          <div className='btn'>
-                            <iframe title='Location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1195.8461848659272!2d-87.47347587752628!3d36.089922070141625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864b23b80b777b3%3A0x40f9846cf96ae34a!2s105%20Donegan%20Crossing%20Rd%2C%20Dickson%2C%20TN%2037055!5e1!3m2!1sen!2sus!4v1604109563731!5m2!1sen!2sus" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                          </div>
                         </div>
                       </div>
                     </div>

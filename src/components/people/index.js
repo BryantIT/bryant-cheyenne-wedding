@@ -10,6 +10,7 @@ import bride6 from '../../images/groomsmen-bridesmaid/6.jpg'
 import bride7 from '../../images/groomsmen-bridesmaid/7.jpg'
 import bride8 from '../../images/groomsmen-bridesmaid/8.jpg'
 import officiant from '../../images/groomsmen-bridesmaid/julietteVincentResized.jpg'
+import usher from '../../images/groomsmen-bridesmaid/dakotaRichardsResized.jpg'
 
 import './style.css'
 
@@ -124,7 +125,7 @@ const People = () => {
                 <div className='col-lg-3 col-md-6 col-sm-6 grid'>
                   <div className='groomsmen-bridesmaid-wrap groomsmen-bridesmaid-wrap-2'>
                     <div className='groomsmen-bridesmaid-img'>
-                      <img src={bride8} alt='bride' />
+                      <img src={usher} alt='bride' />
                     </div>
                     <div className='groomsmen-bridesmaid-content'>
                       <h4>Dakota Richards</h4>

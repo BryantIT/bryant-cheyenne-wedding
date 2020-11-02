@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import gift1 from '../../images/gift/img-1.jpg'
-import gift2 from '../../images/gift/img-2.jpg'
-import gift3 from '../../images/gift/img-3.jpg'
-import gift4 from '../../images/gift/img-4.jpg'
 import amazon from '../../images/gift/amazon.png'
+import bbb from '../../images/gift/Bed-Bath-and-Beyond-Emblem.jpg'
+import macys from '../../images/gift/macys.png'
+import anthropologie from '../../images/gift/anthropologie.png'
+import etsy from '../../images/gift/etsy.png'
+
+
+
 import './style.css'
 
 class Gift extends Component {
@@ -52,30 +54,29 @@ class Gift extends Component {
             <div className='col-lg-12'>
               <Slider {...settings}>
                 <div className='item'>
-                  <Link>
+                  <a target='_blank' rel='noopener noreferrer' href='https://www.amazon.com/wedding/share/bryantandcheyenne'>
                     <img src={amazon} alt="" />
-                  </Link>
+                  </a>
                 </div>
                 <div className='item'>
-                  <img src={gift2} alt="" />
+                  <a target='_blank' rel='noopener noreferrer' href='https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/549595192?eventType=Wedding'>
+                    <img src={bbb} alt="" />
+                  </a>
                 </div>
                 <div className='item'>
-                  <img src={gift3} alt="" />
+                  <a target='_blank' rel='noopener noreferrer' href='https://www.macys.com/wgl/registry/guest/7226452'>
+                    <img src={macys} alt="" />
+                  </a>
                 </div>
                 <div className='item'>
-                  <img src={gift4} alt="" />
+                  <a target='_blank' rel='noopener noreferrer' href='https://www.anthropologie.com/registry/listing?registryId=NDVMNGQ4ZJQ4'>
+                    <img src={anthropologie} alt="" />
+                  </a>
                 </div>
                 <div className='item'>
-                  <img src={gift1} alt="" />
-                </div>
-                <div className='item'>
-                  <img src={gift2} alt="" />
-                </div>
-                <div className='item'>
-                  <img src={gift3} alt="" />
-                </div>
-                <div className='item'>
-                  <img src={gift4} alt="" />
+                  <a target='_blank' rel='noopener noreferrer' href='http://www.etsy.com/registry/MzEyMDIwMjZ8ODA1MzE2NTQ/'>
+                    <img src={etsy} alt="" />
+                  </a>
                 </div>
               </Slider>
             </div>
